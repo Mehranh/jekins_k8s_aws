@@ -341,13 +341,13 @@ pipeline{
 
     }
 
-    post { 
-        always { 
-            script {
-                cleanWs()
-                }
-        }
-    }
+    // post { 
+    //     always { 
+    //         script {
+    //             cleanWs()
+    //             }
+    //     }
+    // }
 
 
 }
