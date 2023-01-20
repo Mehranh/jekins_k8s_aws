@@ -1,6 +1,5 @@
 pipeline{
-
-    agent any
+   agent { node { label 'swarm-ci' } }
     environment{
         AWS_ACCESS_KEY_ID=credentials('AKIA2KYULQT2YU36XHG2')
         AWS_SECRET_ACCESS_KEY=credentials('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')
