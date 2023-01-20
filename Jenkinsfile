@@ -2,14 +2,14 @@ pipeline{
 
     agent any
     environment{
-        AWS_ACCESS_KEY_ID=credentials('awsaccesskey')
-        AWS_SECRET_ACCESS_KEY=credentials('awssecretkey')
+        AWS_ACCESS_KEY_ID=credentials('AKIA2KYULQT2YU36XHG2')
+        AWS_SECRET_ACCESS_KEY=credentials('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')
         AWS_DEFAULT_REGION="us-east-1"
         SKIP="N"
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
-        STATE_BUCKET="<bucket_name>"
-        ANSIBLE_BUCKET_NAME="<ansible_bucket>"
+        STATE_BUCKET="k8smehran"
+        ANSIBLE_BUCKET_NAME="ansiblemehran"
     }
 
 
