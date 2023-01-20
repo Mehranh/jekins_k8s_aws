@@ -341,6 +341,16 @@ pipeline{
 
     }
 
+    post {
+        always {
+            script {
+                if (getContext(hudson.FilePath)) {
+                     cleanWs()
+                }
+            }
+        }
+    }
+
     // post { 
     //     always { 
     //         script {
